@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 /*
  *
@@ -7,7 +9,10 @@
  *
  */
 public class Solution {
-
+	
+	/**
+	 * array plus one
+	 **/
     public int[] plusOne(int[] digits) {
 
         int number1 = (digits[digits.length -1 ] + 1)/10;
@@ -30,13 +35,35 @@ public class Solution {
         return digits;
     }
 
-	public static void main(String[] args) {
-		int[] digits = {8,9,9};
-	    int[] result = new Solution().plusOne(digits);
-		for (int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
-		}
-		System.out.println(result);
+	/**
+	 * 两个数组的交集
+	 **/
+    public int[] intersect(int[] nums1, int[] nums2) {
+		List<Integer> list = new ArrayList<>();
+		if(nums1.length <=  nums2.length){
+			for (int i = 0; i < nums1.length; i++) {
+				
+			}
+		}else{
+			for (int i = 0; i < nums2.length; i++) {
+				
+			}
 
+		}
+
+		int[] result  = new int[list.size()];
+
+		for (int i = 0; i < result.length; i++) {
+			result[i] = list.get(i);
+		}
+		
+		return result;
+    }
+
+	public static void main(String[] args) {
+		int[] nums1 = {1,2};
+		int[] nums2 = {1,2,3};
+		int[] result = new Solution().intersect(nums1, nums2);
+		System.out.println(result);
 	}
 }
