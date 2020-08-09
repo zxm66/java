@@ -1,7 +1,7 @@
 
 public class Solution{
-	
-    public void reverseString(char[] s) {
+
+	public void reverseString(char[] s) {
 		int i = 0;
 		int j = s.length - 1;
 		char c ;
@@ -12,14 +12,14 @@ public class Solution{
 			i ++;
 			j --;
 		}
-		
-    }
+
+	}
 	public static void main(String[] args) {
 		char[] helloWorld = {'h','w'};
 		System.out.println(helloWorld);
 		new Solution().reverseString(helloWorld);
 		System.out.println(helloWorld);
-		
+
 	}
 
 
